@@ -6,7 +6,7 @@ public class RectangleInfo {
         double area;
         double perimeter;
         double diagonal;
-        boolean done = false;
+        boolean done;
         String trash;
 
         //area = length * breadth
@@ -23,6 +23,7 @@ public class RectangleInfo {
                 in.nextLine();
 
                 System.out.println("Enter the width of the rectangle: ");
+
 
                 if(in.hasNextDouble()){
                     width = in.nextDouble();
@@ -44,14 +45,15 @@ public class RectangleInfo {
                     System.exit(0);
                 }
 
-                done = true;
 
             } else{
                 trash = in.nextLine();
                 System.out.println("You entered an invalid value: " + trash);
                 System.exit(0);
             }
-        }while(!done);
+            done = true;
+
+        }while (!done);
 
     }
 }

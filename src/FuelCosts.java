@@ -9,7 +9,7 @@ public class FuelCosts {
 
         Scanner scanner = new Scanner(System.in);
 
-        do{
+        do {
             System.out.println("Enter the gallons in the tank: ");
 
             if(scanner.hasNextDouble()){
